@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AppDbContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DepartmentHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1298,6 +1300,8 @@
     <Content Include="Views\AdminLayout\PartialFooter.cshtml" />
     <Content Include="Views\AdminLayout\PartialScripts.cshtml" />
     <Content Include="Views\Doctor\Index.cshtml" />
+    <Content Include="Views\Doctor\CreateDoctor.cshtml" />
+    <Content Include="Views\Department\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

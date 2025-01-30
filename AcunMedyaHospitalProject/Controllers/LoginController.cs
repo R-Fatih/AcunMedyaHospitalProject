@@ -29,7 +29,7 @@ namespace AcunMedyaHospitalProject.Controllers
                 return View();
             }
             FormsAuthentication.SetAuthCookie(value.Username, true);
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index","Doctor");
         }
     }
 }
