@@ -129,10 +129,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AppDbContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Appointment.cs" />
     <Compile Include="Entities\Contact.cs" />
@@ -1302,6 +1304,14 @@
     <Content Include="Views\Doctor\Index.cshtml" />
     <Content Include="Views\Doctor\CreateDoctor.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\CreateDepartment.cshtml" />
+    <Content Include="Views\UILayout\Index.cshtml" />
+    <Content Include="Views\UILayout\PartialHeader.cshtml" />
+    <Content Include="Views\UILayout\PartialSiteHeader.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\UILayout\PartialFooter.cshtml" />
+    <Content Include="Views\UILayout\PartialAppointmentForm.cshtml" />
+    <Content Include="Views\UILayout\PartialScripts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
