@@ -39,5 +39,19 @@ namespace AcunMedyaHospitalProject.Controllers
             var patientComments = db.PatientComments.ToList();
             return PartialView(patientComments);
         }
+
+        public ActionResult PartialDoctor()
+        {
+            var doctors = db.Doctors.ToList();
+            return PartialView(doctors);
+        }
+
+        public ActionResult PartialEmergency()
+        {
+            var contact = db.Contacts.FirstOrDefault();
+            if (contact == null)
+                contact = new Entities.Contact();
+            return PartialView(contact);
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AcunMedyaHospitalProject.Context;
+using AcunMedyaHospitalProject.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,7 +10,7 @@ namespace AcunMedyaHospitalProject.Controllers
 {
     public class UILayoutController : Controller
     {
-        // GET: UILayout
+        private readonly AppDbContext db = new AppDbContext();
         public ActionResult Index()
         {
             return View();
@@ -27,11 +29,19 @@ namespace AcunMedyaHospitalProject.Controllers
         }
         public ActionResult PartialAppointmentForm()
         {
+            TempData["Departments"] = DepartmentHelper.GetDepartments();
             return PartialView();
         }
         public ActionResult PartialScripts()
         {
             return PartialView();
+        }
+
+        [HttpGet]
+        public JsonResult GetDoctorsByDepartmentId(int departmentId)
+        {
+            var doctors = db.Doctors.Where(x => x.DepartmentId == departmentId).ToList();
+            return Json(doctors, JsonRequestBehavior.AllowGet);
         }
     }
 }

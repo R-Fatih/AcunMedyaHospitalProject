@@ -1320,6 +1320,8 @@
     <Content Include="Views\Default\PartialService.cshtml" />
     <Content Include="Views\Default\PartialDepartment.cshtml" />
     <Content Include="Views\Default\PartialPatientComment.cshtml" />
+    <Content Include="Views\Default\PartialDoctor.cshtml" />
+    <Content Include="Views\Default\PartialEmergency.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
