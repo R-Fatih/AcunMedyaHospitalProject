@@ -143,12 +143,16 @@
     <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\Slider.cs" />
-    <Compile Include="Entities\Testimonial.cs" />
+    <Compile Include="Entities\PatientComment.cs" />
     <Compile Include="Enums\AppointmentStatus.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DepartmentHelper.cs" />
+    <Compile Include="Migrations\202502061743157_mig0602252043patientcomments.cs" />
+    <Compile Include="Migrations\202502061743157_mig0602252043patientcomments.Designer.cs">
+      <DependentUpon>202502061743157_mig0602252043patientcomments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1312,6 +1316,10 @@
     <Content Include="Views\UILayout\PartialFooter.cshtml" />
     <Content Include="Views\UILayout\PartialAppointmentForm.cshtml" />
     <Content Include="Views\UILayout\PartialScripts.cshtml" />
+    <Content Include="Views\Default\PartialSlider.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialDepartment.cshtml" />
+    <Content Include="Views\Default\PartialPatientComment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1342,6 +1350,11 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202502061743157_mig0602252043patientcomments.resx">
+      <DependentUpon>202502061743157_mig0602252043patientcomments.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
