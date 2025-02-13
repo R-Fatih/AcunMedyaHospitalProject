@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AppDbContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AppointmentController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
@@ -152,6 +153,10 @@
     <Compile Include="Migrations\202502061743157_mig0602252043patientcomments.cs" />
     <Compile Include="Migrations\202502061743157_mig0602252043patientcomments.Designer.cs">
       <DependentUpon>202502061743157_mig0602252043patientcomments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502131742023_mig1302252041.cs" />
+    <Compile Include="Migrations\202502131742023_mig1302252041.Designer.cs">
+      <DependentUpon>202502131742023_mig1302252041.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1322,6 +1327,7 @@
     <Content Include="Views\Default\PartialPatientComment.cshtml" />
     <Content Include="Views\Default\PartialDoctor.cshtml" />
     <Content Include="Views\Default\PartialEmergency.cshtml" />
+    <Content Include="Views\Appointment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1356,6 +1362,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202502061743157_mig0602252043patientcomments.resx">
       <DependentUpon>202502061743157_mig0602252043patientcomments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502131742023_mig1302252041.resx">
+      <DependentUpon>202502131742023_mig1302252041.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

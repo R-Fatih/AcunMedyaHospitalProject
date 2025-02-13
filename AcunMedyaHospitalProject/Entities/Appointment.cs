@@ -20,6 +20,8 @@ namespace AcunMedyaHospitalProject.Entities
         public string PatientPhone { get; set; }
         public string PatientEmail { get; set; }
         public AppointmentStatus Status { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime CreatedDate { get; set; }
 
         public virtual Doctor Doctor { get; set; }
     }

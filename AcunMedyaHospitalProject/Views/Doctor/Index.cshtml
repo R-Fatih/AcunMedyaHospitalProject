@@ -19,6 +19,7 @@
                             <th>İsim</th>
                             <th>Resim</th>
                             <th>Bölümü</th>
+                            <th>Randevular</th>
                             <th>Güncelle</th>
                             <th>Kaldır</th>
                         </tr>
@@ -35,6 +36,7 @@
                                 <td>
                                     @item.Department.Name
                                 </td>
+                                <td><a class="btn btn-info" href="/Appointment/AppointmentByDoctor/@item.Id">Randevular</a></td>
                                 <td><a class="btn btn-success" href="/Doctor/UpdateDoctor/@item.Id">Güncelle</a></td>
                                 <td><a class="btn btn-danger" href="/Doctor/RemoveDoctor/@item.Id">Kaldır</a></td>
                             </tr>
